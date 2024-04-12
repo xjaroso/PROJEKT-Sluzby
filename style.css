@@ -1,0 +1,69 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-size: 38px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.header, .options, .service{
+    display: flex;
+    padding-bottom: 80px;
+}
+ .headerimage{
+    max-width: 425px;
+    
+ }
+
+
+.headertext, .headerimage, .menu, .menutext, .option, .optiontext {
+    flex-basis: 50%;
+}
+
+.option, .menu{
+    display: flex;
+    align-items: center;
+}
+
+.headertext{
+    max-width: 490px;
+    margin-left: 60px;
+}
+
+.menu{
+    max-width: 550px;
+    margin-left: 60px;
+}
+
+.option{
+    max-width: 430px;
+    margin-left: 60px; 
+}
+
+.one, .two, .three, .four, .five, .six{
+    flex-direction: column;
+}
