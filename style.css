@@ -11,15 +11,19 @@
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 
-
-body{
+*{
     padding: 0;
     margin: 0;
-    text-align: center;
+}
+
+body{  
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 h1{
@@ -34,10 +38,6 @@ h2{
     display: flex;
     padding-bottom: 80px;
 }
- .headerimage{
-    max-width: 425px;
-    
- }
 
 
 .headertext, .headerimage, .menu, .menutext, .option, .optiontext {
@@ -53,17 +53,32 @@ h2{
     max-width: 490px;
     margin-left: 60px;
 }
+.headerimage{
+    max-width: 490px;
+    image-resolution: 425px;
+ }
 
 .menu{
     max-width: 550px;
     margin-left: 60px;
 }
 
+.menutext{
+    max-width: 430px;
+}
+
 .option{
+    max-width: 550px;
+}
+
+
+.optiontext{
     max-width: 430px;
     margin-left: 60px; 
 }
 
 .one, .two, .three, .four, .five, .six{
     flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
 }
