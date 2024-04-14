@@ -34,6 +34,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    min-height: 100vh;   
 }
 
 @media only screen and (max-width: 640px) {
@@ -59,7 +61,7 @@ body {
     .menutext,
     .option,
     .optiontext {
-        padding: 20px;
+        margin: 20px 0 20px 0;
     }
 
     .buttons {
@@ -109,7 +111,6 @@ body {
         align-content: center;
         justify-content: center;
         text-align: center;
-        width: 100%;
     }
 
     .header,
@@ -118,6 +119,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .headertext,
@@ -126,7 +128,7 @@ body {
     .menutext,
     .option,
     .optiontext {
-        padding: 20px;
+        margin: 20px 0 20px 0;
     }
 
     .buttons {
@@ -189,6 +191,15 @@ body {
         align-content: center;
     }
 
+
+    .menu, .headertext {
+     order: 1;
+    }
+
+    .menutext, .headerimage {
+      order: 2;
+    }
+
     .one,
     .two,
     .three,
@@ -215,6 +226,10 @@ body {
         padding-top: 20px;
     }
 
+    .headerimage img{
+        float: right;
+    }
+
     .option,
     .menu {
         display: flex;
@@ -234,6 +249,7 @@ body {
         display: flex;
         margin-top: 20px;
     }
+
 
 }
 
