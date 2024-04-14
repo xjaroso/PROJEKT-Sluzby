@@ -35,17 +35,61 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh;   
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+.button1 a,
+.button2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.button1 {
+    background-color: #407BFF;
+}
+
+.button2 {
+    background-color: #8B8B8B;
+}
+
+.button1,
+.button2 {
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
 @media only screen and (max-width: 640px) {
 
     body {
-        display: flex;
-        align-content: center;
-        justify-content: center;
         text-align: center;
         width: 100%;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 2px;
+        background-color: #407BFF;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .header,
@@ -66,14 +110,13 @@ body {
 
     .buttons {
         display: flex;
-        flex-direction: column;
+        display: inline-block;
         text-align: center;
         padding-top: 20px;
     }
 
     .headerimage img {
         width: 100%;
-
     }
 
     .one,
@@ -83,9 +126,7 @@ body {
     .five,
     .six {
         font-size: 12px;
-        justify-content: space-around;
-        text-align: center;
-        padding: 20px;
+        justify-content: center;
         margin: 10px;
         background-color: white;
         border-radius: 10px;
@@ -107,10 +148,19 @@ body {
 
 @media only screen and (min-width: 640px) and (max-width: 1100px) {
     body {
-        display: flex;
-        align-content: center;
-        justify-content: center;
         text-align: center;
+        width: 100%;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 2px;
+        background-color: #407BFF;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .header,
@@ -134,6 +184,7 @@ body {
     .buttons {
         display: flex;
         margin-top: 20px;
+        justify-content: center;
     }
 
     .headerimage img {
@@ -173,12 +224,25 @@ body {
 
 
 @media only screen and (min-width: 1100px) {
+    body {
+        width: 100%;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 2px;
+        background-color: #407BFF;
+        margin: 10px 0 10px 0;
+    }
 
     .header,
     .options,
     .service {
         display: flex;
-        padding-top: 80px;
+        padding: 40px 0 40px 0;
+
     }
 
     .headertext,
@@ -191,13 +255,14 @@ body {
         align-content: center;
     }
 
-
-    .menu, .headertext {
-     order: 1;
+    .menu,
+    .headertext {
+        order: 1;
     }
 
-    .menutext, .headerimage {
-      order: 2;
+    .menutext,
+    .headerimage {
+        order: 2;
     }
 
     .one,
@@ -226,7 +291,7 @@ body {
         padding-top: 20px;
     }
 
-    .headerimage img{
+    .headerimage img {
         float: right;
     }
 
@@ -250,67 +315,33 @@ body {
         margin-top: 20px;
     }
 
+    .button1,
+    .button2 {
+        flex-direction: column;
+    }
 
-}
+    .headertext {
+        max-width: 490px;
+    }
 
+    .headerimage {
+        max-width: 490px;
+        background-size: 425px;
+    }
 
-h1 {
-    font-size: 28px;
-    color: black;
-    margin-bottom: 20px;
-}
+    .menu {
+        max-width: 550px;
+    }
 
-h2 {
-    font-size: 20px;
-    color: black;
-    margin-bottom: 20px;
-}
+    .menutext {
+        max-width: 430px;
+    }
 
+    .option {
+        max-width: 550px;
+    }
 
-.button1 a,
-.button2 a {
-    text-decoration: none;
-    color: white;
-}
-
-.button1 {
-    background-color: #407BFF;
-}
-
-.button2 {
-    background-color: #8B8B8B;
-}
-
-.button1,
-.button2 {
-    flex-direction: column;
-    padding: 10px 30px;
-    margin: 10px;
-    border-radius: 20px;
-    font-size: 14px;
-}
-
-.headertext {
-    max-width: 490px;
-}
-
-.headerimage {
-    max-width: 490px;
-    background-size: 425px;
-}
-
-.menu {
-    max-width: 550px;
-}
-
-.menutext {
-    max-width: 430px;
-}
-
-.option {
-    max-width: 550px;
-}
-
-.optiontext {
-    max-width: 430px;
+    .optiontext {
+        max-width: 430px;
+    }
 }
