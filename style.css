@@ -119,12 +119,7 @@ h2 {
         width: 100%;
     }
 
-    .one,
-    .two,
-    .three,
-    .four,
-    .five,
-    .six {
+    .image {
         font-size: 12px;
         justify-content: center;
         margin: 10px;
@@ -135,12 +130,7 @@ h2 {
         align-items: center;
     }
 
-    .one img,
-    .two img,
-    .three img,
-    .four img,
-    .five img,
-    .six img {
+    .image img {
         padding: 10px;
     }
 
@@ -198,12 +188,7 @@ h2 {
 
 }
 
-.one,
-.two,
-.three,
-.four,
-.five,
-.six {
+.image {
     font-size: 12px;
     text-align: center;
     padding: 40px 15px;
@@ -213,12 +198,7 @@ h2 {
     box-shadow: 0px 4px 6px #407BFF1F;
 }
 
-.one img,
-.two img,
-.three img,
-.four img,
-.five img,
-.six img {
+.image img {
     padding: 10px;
 }
 
@@ -265,12 +245,7 @@ h2 {
         order: 2;
     }
 
-    .one,
-    .two,
-    .three,
-    .four,
-    .five,
-    .six {
+    .image {
         font-size: 12px;
         flex-direction: column;
         justify-content: space-around;
@@ -282,12 +257,7 @@ h2 {
         box-shadow: 0px 4px 6px #407BFF1F;
     }
 
-    .one p,
-    .two p,
-    .three p,
-    .four p,
-    .five p,
-    .six p {
+    .image p {
         padding-top: 20px;
     }
 
